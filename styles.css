@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  --iceCold: #a0d2eb;
+  --freezePurple: #e5eaf5;
+  --mediumPurple: #d0bdf4;
+  --purplePain: #8458B3;
+  --heavyPurple: #494d5f;
+  --black: #333738;
+}
+
+body {
+  background: linear-gradient(.5turn,
+      var(--iceCold),  30%,
+      var(--purplePain)
+  );
+  font-family: arial;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: var(--freezePurple);
+  text-shadow: 2px 2px 2px var(--black);
+  font-size: 3em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+form{
+  margin: 5% 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--freezePurple);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px var(--heavyPurple);
+}
+
+input {
+  padding: 5px;
+  width: 250px;
+  margin: 30px;
+  border: none;
+  border-bottom: 3px solid var(--heavyPurple);
+  background-color: transparent;
+  text-align: center;
+  color: var(--heavyPurple);
+  font-size: 3em;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  display: inline-flex;
+  background-color: var(--freezePurple);
+  font-size: 1.1em;
+  font-weight: 700;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px var(--black), 0 2px 4px -1px var(--black);
+  letter-spacing: 0.5px;
+  height: 56px;
+  padding: 24px;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 4px -6px var(--black), 0 2px -4px var(--black);
+}
+
+#output {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--heavyPurple);
+  width: 60%;
+  background-color: var(--freezePurple);
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--purplePain);
+}
